@@ -182,10 +182,10 @@
                     <ImageView
                         android:id="@+id/imageView7"
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:layout_gravity="bottom"
                         android:layout_margin="20dp"
-                        app:srcCompat="@drawable/maps" />
+                        app:srcCompat="@drawable/location" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
@@ -261,14 +261,24 @@
         android:id="@+id/editText7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
         android:text="SMK SYAFI'I AKROM"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText7"
+        app:layout_constraintEnd_toStartOf="@+id/editText7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText7"
+        app:srcCompat="@drawable/unnamed_removebg_preview__1_" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
