@@ -9,40 +9,39 @@
     android:background="#F1D187">
 
     <Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#FF3322"
-        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
+    <ScrollView
         android:layout_width="match_parent"
-
-
-        android:layout_height="747dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="20dp"
+                android:background="#fff"
+                app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="8dp">
 
                 <ImageView
                     android:id="@+id/imageView8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="30dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     app:srcCompat="@drawable/search_removebg_preview__1_" />
             </androidx.cardview.widget.CardView>
 
@@ -56,6 +55,7 @@
                     android:layout_height="180dp"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp">
 
                     <ImageView
@@ -79,6 +79,7 @@
                     android:layout_margin="15dp"
                     android:layout_weight="1"
                     android:padding="20dp"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp">
 
                     <ImageView
@@ -109,7 +110,7 @@
                     <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="wrap_content"
-                        android:layout_height="120dp"
+                        android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:background="#FFFFFF"
                         android:contentDescription="TODO"
@@ -122,12 +123,13 @@
                     android:layout_margin="15dp"
                     android:layout_weight="1"
                     android:padding="20dp"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp">
 
                     <ImageView
                         android:id="@+id/imageView7"
                         android:layout_width="wrap_content"
-                        android:layout_height="120dp"
+                        android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         app:srcCompat="@drawable/maps" />
                 </androidx.cardview.widget.CardView>
@@ -144,13 +146,14 @@
                     android:layout_margin="15dp"
                     android:layout_weight="1"
                     android:padding="20dp"
+                    app:cardBackgroundColor="#F3ECEC"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
 
                     <ImageView
                         android:id="@+id/imageView"
                         android:layout_width="wrap_content"
-                        android:layout_height="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         app:srcCompat="@drawable/newspaper" />
                 </androidx.cardview.widget.CardView>
@@ -161,6 +164,7 @@
                     android:layout_margin="15dp"
                     android:layout_weight="1"
                     android:padding="20dp"
+                    app:cardBackgroundColor="#FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="2dp">
 
@@ -173,7 +177,7 @@
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
